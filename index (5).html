@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tourism in Goa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url(https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036484.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 2em;
+        background-color: #00796B;
+        color: white;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5em;
+      }
+
+      .nav-links a {
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .hero {
+        background: url('https://source.unsplash.com/1600x600/?goa') center/cover no-repeat;
+        color: white;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px 5px #000;
+      }
+
+      .hero-text h1 {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+      }
+
+      .section {
+        padding: 3em 2em;
+        background: #FFFFFF80;
+        margin-bottom: 2em;
+      }
+
+      .cards {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        background: #e0f2f1;
+        padding: 1em;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 6px;
+      }
+
+      .guides button {
+        margin: 0.5em;
+        padding: 0.7em 1.5em;
+        background: #00796B;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #guideContent {
+        margin-top: 1em;
+        background: #f0f0f0;
+        padding: 1em;
+        border-radius: 5px;
+      }
+
+      .gallery {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gallery img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .review-slider {
+        text-align: center;
+        position: relative;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .review {
+        display: none;
+        font-size: 1.2em;
+        background: #f1f8e9;
+        padding: 1em;
+        border-radius: 8px;
+      }
+
+      .review.active {
+        display: block;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+        gap: 1em;
+      }
+
+      input, textarea {
+        padding: 0.8em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button[type="submit"] {
+        background-color: #00796B;
+        color: white;
+        border: none;
+        padding: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5em;
+        background: #00796B;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo">Goa Tourism</div>
+        <ul class="nav-links">
+          <li><a href="#attractions">Attractions</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <h1>Explore the Magic of Goa</h1>
+        <p>Beaches, forts, culture & cuisine – All in one place</p>
+      </div>
+    </header> 
+    <section id="attractions" class="section">
+      <h2>Top Attractions</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036443.jpg" alt="Beach">
+          <h3>Baga Beach</h3>
+          <p>Baga Beach, located in North Goa, is one of the most popular and lively beaches in the region, known for its vibrant nightlife, beach shacks, water sports, and scenic sunsets. It's a must-visit for travelers seeking the perfect mix of relaxation and adventure — from parasailing and jet skiing to dancing at iconic clubs like Tito’s and Mambo’s. The energetic vibe, delicious seafood, and stunning shoreline make Baga an unforgettable coastal experience.</p>
+        </div>
+        <div class="card">
+          <img src="https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036446.jpg" alt="Fort">
+          <h3>Aguada Fort</h3>
+          <p>Colonial-era Portuguese fort with scenic views Aguada Fort, located in North Goa, is a 17th-century Portuguese fort overlooking the Arabian Sea. It is popular for its historic significance, well-preserved structure, and breathtaking panoramic views. Every tourist visits it to explore the iconic lighthouse, ancient architecture, and to enjoy the sunset views from the ramparts. It’s a perfect blend of history, scenic beauty, and coastal charm.</p>
+        </div>
+        <div class="card">
+          <img src="https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036452.jpg" alt="Church">
+          <h3>Basilica of Bom Jesus</h3>
+          <p>The Basilica of Bom Jesus, located in Old Goa, is one of the most iconic and revered churches in India. Built in the late 16th century, it houses the mortal remains of St. Francis Xavier, making it a significant pilgrimage site for Christians around the world. The church is a UNESCO World Heritage Site, known for its stunning Baroque architecture, detailed carvings, and spiritual atmosphere. Its historical and religious importance, along with its beautiful interior, make it a must-visit for anyone exploring Goa.</p>
+        </div>
+      </div>
+    </section>
+    <section id="guides" class="section">
+      <h2>Travel Guides</h2>
+      <div class="guides">
+        <button onclick="showGuide('food')">Local Food</button>
+        <button onclick="showGuide('festivals')">Festivals</button>
+        <button onclick="showGuide('shopping')">Shopping</button>
+        <div id="guideContent"></div>
+      </div>
+    </section>
+    <section id="gallery" class="section">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036474.jpg" alt="food">
+        <img src="https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036471.jpg" alt="Nature">
+        <img src="https://uploads.onecompiler.io/43mj437ft/43r4m9r2b/1000036473.jpg" alt="Festivals">
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact us to know more!</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="query" placeholder="Your Query" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Goa Tourism. Designed by Saachi.</p>
+    </footer>
+
+    <script>
+      function showGuide(type) {
+        const content = {
+          food: "Goa offers authentic seafood, spicy curries, and local delights like Bebinca and Xacuti.",
+          festivals: "Popular festivals in Goa include Carnival, Shigmo, Sunburn, and Christmas celebrations.",
+          shopping: "Markets like Anjuna Flea Market, Mapusa, and Panjim offer souvenirs, clothes, and local crafts."
+        };
+        document.getElementById('guideContent').textContent = content[type];
+      }
+
+      let currentReview = 0;
+      const reviews = document.querySelectorAll('.review');
+
+      function showNextReview() {
+        reviews[currentReview].classList.remove('active');
+        currentReview = (currentReview + 1) % reviews.length;
+        reviews[currentReview].classList.add('active');
+      }
+      setInterval(showNextReview, 4000);
+
+      function submitForm(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        alert(Thank you, ${name}! We'll get back to you at ${email}.);
+        document.querySelector('form').reset();
+      }
+    </script>
+  </body>
+</html>
